@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="build/bundle.min.css"></link>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <title>Memory</title>
+</head>
+<body id="body">
+    <img id="snoop_left" class="snoop" src = "src/images/snoop_left.png" height="600px">
+    <img id="snoop_right" class="snoop" src = "src/images/snoop_right.png" height="600px">
+    <div id="content">
+        <header>
+            <h1>Memory</h1>
+        </header>
+        <section id="rules">
+            <article>
+                <h3>How to play:</h3>
+                <em>Memory is a counter game where the object is to find pairs. When the game begins, all pictures are hidden.</em>
+            </article>
+            <article>
+                <h3>To play:</h3>
+                <ul>
+                    <i> <li>Select two cards to try to match the pictures.</li>
+                        <li>If you match the pictures you can go again.</li>
+                        <li>If they don't match it is the computer turn them.</li>
+                        <li>The player who finds all pairs win!</li>
+                        <li>Have fun!</li> </i>
+                </ul>
+            </article>
+        </section>
+    </div>
+    <div id="buttons">
+        <div>
+            <section id="cards_back">
+                <input id="back" type="button" value="Cards back"/>
+                <ul>
+                    <li>
+                        <input type="radio" id="card_back0">
+                        <label for="card_back0"><img src ="src/images/CardBack0.png"></label>
+                    </li>
+                    <li>
+                        <input type="radio" id="card_back1">
+                        <label for="card_back1"><img src ="src/images/CardBack1.png"></label>
+                    </li>
+                    <li>
+                        <input type="radio" id="card_back2">
+                        <label for="card_back2"><img src ="src/images/CardBack2.png"></label>
+                    </li>
+                </ul>
+            </section>
+            <section id="game_difficulty">
+                <input id="difficulty" type="button" value="Game Difficulty"/>
+                <ul>
+                    <li>
+                        <input type="radio" id="difficulty_easy">
+                        <label for="difficulty_easy">Easy (5 x 2)</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="difficulty_medium">
+                        <label for="difficulty_medium">Medium (6 x 3)</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="difficulty_hard">
+                        <label for="difficulty_hard">Hard (8 x 3)</label>
+                    </li>
+                </ul>
+            </section>  
+        </div>
+        <section>
+                <input id="new_game" type="button" value="New Game">
+        <section>
+    </div> 
+    <script src="build/libs.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
